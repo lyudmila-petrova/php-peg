@@ -1,10 +1,19 @@
 {
-	"name":         "hafriedlander/php-peg",
-	"description":  "PEG (parsing expression grammar) compiler for PHP",
-	"keywords":     ["PEG", "parser", "DSL", "compiler"],
-	"homepage":     "https://github.com/hafriedlander/php-peg",
-	"type":         "library",
-	"license":      ["MIT", "GPLv2", "BSD-3"],
+	"name": "lyudmila-petrova/php-peg",
+	"description": "PEG (parsing expression grammar) compiler for PHP",
+	"keywords": [
+		"PEG", 
+		"parser", 
+		"DSL", 
+		"compiler"
+	],
+	"homepage": "https://github.com/lyudmila-petrova/php-peg",
+	"type": "library",
+	"license": [
+		"MIT", 
+		"GPLv2", 
+		"BSD-3"
+	],
 	"authors":      [
 		{
 			"name":      "Hamish Friedlander",
@@ -13,8 +22,13 @@
 		}
 	],
 	"require": {
-		"php":             ">=5.3.0"
+		"php": ">=5.3.0"
 	},
-	"version" :     "2.0.0",
-	"bin":          ["cli.php"]
+	"autoload": {
+        "psr-4": {
+            "hafriedlander\\Peg\\": "lib/"
+        }
+	},
+	"version" : "2.0.0",
+	"bin": ["cli.php"]
 }
